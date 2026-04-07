@@ -7,11 +7,18 @@ import {
     IonMenuButton, 
     IonPage, 
     IonTitle, 
-    IonToolbar } 
+    IonToolbar,
+IonButton, 
+useIonRouter} 
 from "@ionic/react";
 
 
-const Template : React.FC = () => {
+const Login : React.FC = () => {
+    const navigation = useIonRouter();
+
+    const doLogin = () => {
+        navigation.push('/app', 'forward', 'replace');
+    };
 
     return (
 
@@ -25,18 +32,22 @@ const Template : React.FC = () => {
                     </IonButtons> 
 
                     <IonTitle>
-                        Template
+                        Login
 
                     </IonTitle>
 
 
-
+                  
                 </IonToolbar>
             </IonHeader>
 
             <IonContent fullscreen> 
 
-                <h1>Template</h1>
+                <IonButton expand="full" onClick={() => doLogin()}>
+                    Login
+                </IonButton>
+
+               
             </IonContent>
 
 
@@ -48,6 +59,8 @@ const Template : React.FC = () => {
 
 };
 
-export default Template;
+export default Login;
 
 // logic
+
+// render ui

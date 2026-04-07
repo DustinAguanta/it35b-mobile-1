@@ -11,7 +11,7 @@ import {
 from "@ionic/react";
 
 
-const Template : React.FC = () => {
+const About : React.FC = () => {
 
     return (
 
@@ -25,18 +25,18 @@ const Template : React.FC = () => {
                     </IonButtons> 
 
                     <IonTitle>
-                        Template
+                        About
 
                     </IonTitle>
 
 
-
+                  
                 </IonToolbar>
             </IonHeader>
 
             <IonContent fullscreen> 
 
-                <h1>Template</h1>
+                <h1>About</h1>
             </IonContent>
 
 
@@ -48,6 +48,8 @@ const Template : React.FC = () => {
 
 };
 
-export default Template;
+export default About;
 
 // logic
+
+// render ui
