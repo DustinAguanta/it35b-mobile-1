@@ -4,7 +4,7 @@ import { IonPage, IonSplitPane, IonMenu, IonHeader, IonToolbar, IonTitle, IonCon
 import { Redirect, Route } from "react-router";
 import { homeOutline, informationCircleOutline, logOutOutline } from "ionicons/icons";
 import Home from "./Home";
-import About from "./About";
+import About from "./about";
 
 
 
