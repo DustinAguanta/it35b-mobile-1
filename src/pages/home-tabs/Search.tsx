@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 
 const Search:React.FC = () => {
    const games = [
-    {name: 'Pokemon Yellow',},
-    {name: 'Mega Man X',},
-    {name: 'The Legend of Zelda', },
-    {name: 'Pac-Man', },
-    {name: 'Super Mario World',}
+    {name: 'Pokemon Yellow', details:"I love Pickachu"},
+    {name: 'Mega Man X', details:"I love Mega Man"},
+    {name: 'The Legend of Zelda', details:"I love Zelda"},
+    {name: 'Pac-Man', details:"I love Pac-Man"},
+    {name: 'Super Mario World', details:"I love Super Mario"}
     ]
     
     const [searchText, setSearchText] = useState('');
